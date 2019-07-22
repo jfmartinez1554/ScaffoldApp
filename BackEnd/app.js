@@ -22,9 +22,9 @@ app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/users', usersRouter);
 
-app.use('/api/*', indexRouter);
+app.use('/api', indexRouter);
 
-// The following 2 lines serve the FrontEnd Applcication by starting the Node Server
+// The following 2 lines serve the FrontEnd Application by starting the Node Server
 
 const allowedExt = [
   '.js',
